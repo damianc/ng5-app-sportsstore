@@ -27,7 +27,7 @@ module.exports = function () {
 				description: 'Przyjemna gra dla całej rodziny.', price: 75
 			}, {
 				id: 9, name: 'Błyszczący król', category: 'Szachy',
-				description: 'Pokryty złotem i wysadzany diamentami król.' price: 1200
+				description: 'Pokryty złotem i wysadzany diamentami król.', price: 1200
 			}
 		],
 		orders: []
