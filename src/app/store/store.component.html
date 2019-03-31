@@ -1,5 +1,6 @@
 <div class="navbar navbar-inverse bg-dark text-white">
 	<a class="navbar-brand">SKLEP SPORTOWY</a>
+	<cart-summary></cart-summary>
 </div>
 
 <div class="container">
@@ -17,7 +18,12 @@
 						<div class="bg-primary text-white p-3">{{product.name}}</div>
 						<div class="bg-light py-5 text-center border-bottom border-dark">THUMB</div>
 						<div class="p-3">{{product.description}}</div>
-						<div class="pl-3 pb-3"><span class="badge badge-danger">{{ product.price | currency:'zł':true:'2.2-2' }}</span></div>
+						<div class="pl-3 pr-3 pb-3">
+							<span class="badge badge-danger">{{ product.price | currency:'zł':true:'2.2-2' }}</span>
+							<button class="btn btn-success btn-sm float-right" (click)="addProductToCart(product)">
+								Dodaj do koszyka
+							</button>
+						</div>
 					</div>
 				</div>
 			</div>
