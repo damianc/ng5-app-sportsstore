@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
 import { NgForm } from "@angular/forms";
-import { Router } from "@angular/route";
+import { Router } from "@angular/router";
 
 @Component({
 	moduleId: module.id,
